@@ -1,0 +1,121 @@
+main#products {
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0px;
+  div#product-left {
+    padding: 20px;
+
+    p.product-left-label {
+      font-weight: bolder;
+      padding: 20px 0px;
+    }
+    div#product-price-slider-range {
+      width: 225px;
+    }
+    p.p-cb {
+      padding: 5px 0px;
+    }
+    span#price-range {
+      color: #f6931f;
+    }
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 280px;
+  }
+  div#product-right {
+    flex-grow: 1;
+    padding: 10px;
+    border-left: 2px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+    div.product-item {
+      &:hover {
+        box-shadow: 0px 0px 5px #cdd0cb;
+      }
+      width: 265px;
+      padding: 10px;
+      p.product-item-imgWrapper {
+        text-align: center;
+        img.product-img {
+          width: 245px;
+          height: 120px;
+          object-fit: contain;
+        }
+      }
+      p.item-p-wrapper {
+        padding: 10px 0px;
+      }
+      span.item-ranking {
+        width: 100px;
+        height: 30px;
+        display: inline-block;
+        background-image: url(../images/bg.png);
+        background-repeat: no-repeat;
+        background-position-y: -392px;
+        &.ranking-4 {
+          width: 80px;
+        }
+        vertical-align: top;
+      }
+      span.item-comments-count {
+        color: #007185;
+        padding: 0px 5px;
+        height: 30px;
+        line-height: 33px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      span.item-name {
+        color: #0f1111;
+        display: block;
+        height: 40px;
+      }
+      span.item-delivery {
+        color: #565959;
+        font-weight: bolder;
+      }
+      button.item-btn-action {
+        position: relative;
+        height: 45px;
+        width: 200px;
+        color: white;
+        background-color: #0f1111;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        line-height: 45px;
+        display: block;
+        margin: 0px auto;
+        font-size: 16px;
+        font-weight: bolder;
+        &:hover {
+          color: #fc8621;
+        }
+        span.item-btn-icon {
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          vertical-align: middle;
+          position: absolute;
+          left: 10px;
+          top: 8px;
+          background-image: url(../images/bg.png);
+          background-position-y: -725px;
+          background-position-x: -31px;
+        }
+        &.item-in-shoppingcar {
+          span {
+            background-position-x: 0px;
+          }
+          &:hover {
+            color: #a9294f;
+          }
+        }
+      }
+    }
+  }
+}
