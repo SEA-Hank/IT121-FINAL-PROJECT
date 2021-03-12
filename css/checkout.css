@@ -36,6 +36,10 @@ main#checkout div#shopping-car-wrappper ul#item-list li span.item-price {
 main#checkout div#shopping-car-wrappper ul#item-list li:last-child {
   border-bottom: none;
 }
+main#checkout div#shopping-car-wrappper ul#item-list li:last-child span {
+  color: #e45826;
+  font-weight: bolder;
+}
 main#checkout div#form-wrapper {
   background: white;
   width: 950px;
@@ -46,7 +50,16 @@ main#checkout div#form-wrapper table {
   width: 100%;
 }
 main#checkout div#form-wrapper table td {
-  padding: 10px 20px;
+  vertical-align: top;
+  padding: 0px 20px;
+  width: 450px;
+  height: 100px;
+}
+main#checkout div#form-wrapper table td .error {
+  color: #e40017;
+  padding: 5px 0px;
+  font-style: italic;
+  display: block;
 }
 main#checkout div#form-wrapper table p.table-label {
   font-size: 20px;
@@ -78,6 +91,16 @@ main#checkout div#form-wrapper table button#checkout-btn:hover {
 }
 main#checkout div#form-wrapper table button#checkout-btn:active {
   color: white;
+}
+main#checkout div#form-wrapper div#thanks {
+  display: none;
+  padding: 20px;
+}
+main#checkout div#form-wrapper div#thanks p {
+  font-size: 30px;
+}
+main#checkout div#form-wrapper div#thanks p#client-name {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=checkout.css.map */

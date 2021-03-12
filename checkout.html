@@ -11,6 +11,8 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery-ui/jquery-ui.min.js"></script>
     <script src="./js/data.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/checkout.js"></script>
   </head>
   <body>
     <header>
@@ -26,76 +28,73 @@
     <main id="checkout">
       <div id="shopping-car-wrappper">
         <p id="shopping-car-title">Your Shopping Car</p>
-        <ul id="item-list">
-          <li>
-            <img src="./images/headphones/10.jpg" alt="" />
-            <span>Razer Ornata Chroma Gaming Keyboard</span>
-            <span class="item-price">79.0</span>
-          </li>
-          <li>
-            <img src="./images/headphones/10.jpg" alt="" />
-            <span>Razer Ornata Chroma Gaming Keyboard</span>
-            <span class="item-price">79.0</span>
-          </li>
-          <li>
-            <img src="./images/headphones/10.jpg" alt="" />
-            <span>Razer Ornata Chroma Gaming Keyboard</span>
-            <span class="item-price">$ 79.0</span>
-          </li>
-          <li>
-            <span class="item-price">Total : $79.0</span>
-          </li>
-        </ul>
+        <ul id="item-list"></ul>
       </div>
       <div id="form-wrapper">
-        <table>
-          <tr>
-            <td>
-              <p class="table-label">First Name</p>
-              <input
-                class="table-input"
-                type="text"
-                name="firstname"
-                id="firstname"
-              />
-            </td>
-            <td>
-              <p class="table-label">Last Name</p>
-              <input
-                class="table-input"
-                type="text"
-                name="lastname"
-                id="lastname"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p class="table-label">Email</p>
-              <input class="table-input" type="email" name="email" id="email" />
-            </td>
-            <td>
-              <p class="table-label">Phone</p>
-              <input class="table-input" type="text" name="Phone" id="Phone" />
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <p class="table-label">Address</p>
-              <input
-                class="table-input"
-                type="text"
-                name="Address"
-                id="Address"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button id="checkout-btn">CHECK OUT</button>
-            </td>
-          </tr>
-        </table>
+        <form id="checkoutform" action="" method="POST">
+          <table>
+            <tr>
+              <td>
+                <p class="table-label">First Name</p>
+                <input
+                  class="table-input"
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                />
+              </td>
+              <td>
+                <p class="table-label">Last Name</p>
+                <input
+                  class="table-input"
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="table-label">Email</p>
+                <input
+                  class="table-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </td>
+              <td>
+                <p class="table-label">Phone</p>
+                <input
+                  class="table-input"
+                  type="text"
+                  name="Phone"
+                  id="Phone"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p class="table-label">Address</p>
+                <input
+                  class="table-input"
+                  type="text"
+                  name="Address"
+                  id="Address"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button id="checkout-btn" type="submit">CHECK OUT</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <div id="thanks">
+          <p>THANK YOU !</p>
+          <p id="client-name">HANK HO</p>
+        </div>
       </div>
     </main>
     <footer>

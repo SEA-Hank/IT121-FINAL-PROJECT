@@ -31,6 +31,10 @@ main#checkout {
         }
         &:last-child {
           border-bottom: none;
+          span {
+            color: #e45826;
+            font-weight: bolder;
+          }
         }
       }
     }
@@ -41,10 +45,19 @@ main#checkout {
     margin: 20px auto;
     padding: 20px;
     table {
-      td {
-        padding: 10px 20px;
-      }
       width: 100%;
+      td {
+        vertical-align: top;
+        padding: 0px 20px;
+        width: 450px;
+        height: 100px;
+        .error {
+          color: #e40017;
+          padding: 5px 0px;
+          font-style: italic;
+          display: block;
+        }
+      }
       p.table-label {
         font-size: 20px;
       }
@@ -74,6 +87,17 @@ main#checkout {
         }
         &:active {
           color: white;
+        }
+      }
+    }
+
+    div#thanks {
+      display: none;
+      padding: 20px;
+      p {
+        font-size: 30px;
+        &#client-name {
+          margin-top: 10px;
         }
       }
     }
