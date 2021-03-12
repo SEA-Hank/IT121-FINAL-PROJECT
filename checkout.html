@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./js/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./js/data.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./products.html">PRODUCTS</a></li>
+          <li><a href="./checkout.html">CHECK OUT</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main id="checkout">
+      <div id="shopping-car-wrappper">
+        <p id="shopping-car-title">Your Shopping Car</p>
+        <ul id="item-list">
+          <li>
+            <img src="./images/headphones/10.jpg" alt="" />
+            <span>Razer Ornata Chroma Gaming Keyboard</span>
+            <span class="item-price">79.0</span>
+          </li>
+          <li>
+            <img src="./images/headphones/10.jpg" alt="" />
+            <span>Razer Ornata Chroma Gaming Keyboard</span>
+            <span class="item-price">79.0</span>
+          </li>
+          <li>
+            <img src="./images/headphones/10.jpg" alt="" />
+            <span>Razer Ornata Chroma Gaming Keyboard</span>
+            <span class="item-price">$ 79.0</span>
+          </li>
+          <li>
+            <span class="item-price">Total : $79.0</span>
+          </li>
+        </ul>
+      </div>
+      <div id="form-wrapper">
+        <table>
+          <tr>
+            <td>
+              <p class="table-label">First Name</p>
+              <input
+                class="table-input"
+                type="text"
+                name="firstname"
+                id="firstname"
+              />
+            </td>
+            <td>
+              <p class="table-label">Last Name</p>
+              <input
+                class="table-input"
+                type="text"
+                name="lastname"
+                id="lastname"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="table-label">Email</p>
+              <input class="table-input" type="email" name="email" id="email" />
+            </td>
+            <td>
+              <p class="table-label">Phone</p>
+              <input class="table-input" type="text" name="Phone" id="Phone" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p class="table-label">Address</p>
+              <input
+                class="table-input"
+                type="text"
+                name="Address"
+                id="Address"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="checkout-btn">CHECK OUT</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <span> IT121-FINAL-PROJECT YINGHENG HE (HANK) </span>
+      </div>
+    </footer>
+  </body>
+</html>
