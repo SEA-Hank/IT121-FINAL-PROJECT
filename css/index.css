@@ -94,6 +94,7 @@ main#index div.wrapper div#line-2 div#img-wrapper img {
   display: block;
 }
 main#index div.wrapper div#line-2 div.arrow {
+  display: none;
   cursor: pointer;
   position: absolute;
   height: 160px;
