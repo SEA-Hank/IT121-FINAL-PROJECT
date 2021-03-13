@@ -10,7 +10,7 @@ main#index img:hover {
   transform: scale(1.1);
 }
 main#index div.wrapper {
-  width: 1460px;
+  width: 1400px;
   margin: 0px auto;
   padding: 20px;
 }
