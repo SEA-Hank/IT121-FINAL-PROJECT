@@ -1,0 +1,38 @@
+main#about {
+  > p {
+    padding: 20px 0px 0px 0px;
+    width: 1050px;
+    margin: 0px auto;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  div#wrapper {
+    padding: 20px 0px;
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    div#div-image {
+      flex: 680px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      img {
+        width: 100%;
+      }
+    }
+    div#div-info {
+      flex-grow: 1;
+      p {
+        padding: 10px;
+        font-weight: 700;
+        &.label {
+          font-size: 18px;
+        }
+        &.content {
+          color: #435560;
+        }
+      }
+    }
+  }
+}
